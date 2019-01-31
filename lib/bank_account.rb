@@ -14,7 +14,7 @@ end
   
 
  def deposit(money)
-  @bank_account << money
+   self
   end  
 
 def display_balance 
