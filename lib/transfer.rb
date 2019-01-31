@@ -13,7 +13,7 @@ class Transfer
   end  
   
   def valid?
-    receiver_balance > 0 && status == "open" || sender_balance > 0 && status == "open"
+    sender.valid? && receiver.valid?
   end  
     
   
